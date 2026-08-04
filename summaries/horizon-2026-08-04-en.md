@@ -1,256 +1,248 @@
 # Horizon Daily - 2026-08-04
 
-> From 33 items, 11 important content pieces were selected
+> From 38 items, 10 important content pieces were selected
 
 ---
 
-1. [Qwen Releases 3.8-Max: 2.4T Parameters, First Open-Source Max Model](#item-1) ⭐️ 9.0/10
-2. [LLMs Amplify Existing Expertise Rather Than Replace It](#item-2) ⭐️ 8.0/10
-3. [OpenAI Lists Ten AI-Powered Advances in Mathematics and CS](#item-3) ⭐️ 8.0/10
-4. [Devtools must be open source so LLMs can modify them directly](#item-4) ⭐️ 8.0/10
-5. [MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, 2K Video](#item-5) ⭐️ 8.0/10
-6. [Andy Pavlo Joins ClickHouse to Launch ClickHouse Labs](#item-6) ⭐️ 8.0/10
-7. [Jane Street&\#x27;s Bonsai Brings OCaml to Full-Stack Web Development](#item-7) ⭐️ 8.0/10
-8. [Kimi K3 Architecture Analyzed: Memory, Depth Attention, Latent Experts](#item-8) ⭐️ 8.0/10
-9. [DNA Device Flaw Exposes 30 Years of Crime Evidence to Tampering](#item-9) ⭐️ 8.0/10
-10. [Nvidia CMP 170HX miners cracked to unlock 80GB memory, prices surge](#item-10) ⭐️ 8.0/10
-11. [Apple Sues UK Government Over iCloud Backdoor Demand](#item-11) ⭐️ 8.0/10
+1. [Keyv and related npm packages compromised in active Shai-Hulud supply chain attack](#item-1) ⭐️ 9.0/10
+2. [Google Builds $200B Wall Street Financing Machine for Anthropic](#item-2) ⭐️ 9.0/10
+3. [Custom Color Space and Algorithm for Diverse Skin Tones](#item-3) ⭐️ 8.0/10
+4. [DeepSeek V4 Flash Runs on a Single AMD MI300X](#item-4) ⭐️ 8.0/10
+5. [FedEx Phishing-Like Emails Show Why Users Keep Falling for Scams](#item-5) ⭐️ 8.0/10
+6. [Oxide Computer Raises $445M in Series D Funding Round](#item-6) ⭐️ 8.0/10
+7. [Xbox Outage Blocks Disc Games, Reigniting Digital Ownership Debate](#item-7) ⭐️ 8.0/10
+8. [PipeNetwork&\#x27;s MLX Port Brings MiniMax-H3 Video Generation to Apple Silicon](#item-8) ⭐️ 8.0/10
+9. [China Issues First Mandatory National Standard for L3/L4 Autonomous Driving](#item-9) ⭐️ 8.0/10
+10. [White House Reverses on Open-Source AI Rules, Splitting Silicon Valley](#item-10) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Qwen Releases 3.8-Max: 2.4T Parameters, First Open-Source Max Model](https://qwen.ai/blog?id=qwen3.8) ⭐️ 9.0/10
+## [Keyv and related npm packages compromised in active Shai-Hulud supply chain attack](https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack) ⭐️ 9.0/10
 
-Qwen released Qwen 3.8-Max, a 2.4-trillion-parameter Mixture-of-Experts model with 95 billion active parameters, and announced that model weights will be open-sourced next week — the first time Qwen has opened a Max-level model. This marks a major milestone in open-source AI, as Qwen&\#x27;s largest and most capable model becomes accessible to the community. It could significantly boost research and development around MoE architectures and ultra-large-scale inference. Built on the Qwen 3.5 architecture, the model excels in coding, work, research, and long-horizon tasks. In a coding test it ran autonomously for over 10 days, and it beat 458 of 526 teams in the WWW2025 multimodal conversation intent recognition competition; API access is already available via QwenCloud.
+A self-replicating worm named Shai-Hulud is actively compromising the Keyv npm package and its related dependencies, along with hundreds of other packages in the npm ecosystem. The attack is ongoing and has triggered urgent security warnings from researchers and government agencies. This attack targets widely used open-source packages like Keyv, which has hundreds of downstream dependents, meaning the compromise could cascade across countless applications. It underscores the systemic fragility of the npm dependency chain and the urgent need for better supply-chain security practices. Over 500 packages have been compromised by the worm, which spreads via pre-install hooks and automated credential harvesting. The attack also leverages compromised maintainer accounts to publish malicious updates, making detection difficult without behavioral analysis.
 
-telegram · zaihuapd · Aug 3, 02:31
+hackernews · cimi\_ · Aug 4, 11:01 · [Discussion](https://news.ycombinator.com/item?id=49166874)
 
-**Background**: Qwen 3.8-Max uses a Mixture-of-Experts \(MoE\) architecture, which scales up total parameter count while keeping computation efficient by activating only a subset of parameters per token. In MoE models, total parameters represent the full knowledge capacity, while active parameters determine the compute cost per inference step. This approach has become a standard for state-of-the-art large language models.
+**Background**: The npm registry is the default package manager for JavaScript and Node.js, and supply chain attacks against it are becoming increasingly common. Shai-Hulud is a self-propagating worm that compromises packages to steal credentials and spread malicious code, representing a significant evolution from traditional single-use payload attacks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained - Hugging Face</a></li>
-<li><a href="https://medium.com/@csburakkilic/understanding-moe-architectures-the-difference-between-total-and-active-parameters-ad1d161fccaa">Understanding MoE Architectures: The Difference Between Total and Active Parameters | by Burak Kılıç | Medium</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/npm-supply-chain-attack/">&quot;Shai-Hulud&quot; Worm Compromises npm Ecosystem in Supply Chain Attack (Updated November 26)</a></li>
+<li><a href="https://www.cisa.gov/news-events/alerts/2025/09/23/widespread-supply-chain-compromise-impacting-npm-ecosystem">Widespread Supply Chain Compromise Impacting npm Ecosystem | CISA</a></li>
+<li><a href="https://www.trendmicro.com/en_us/research/25/i/npm-supply-chain-attack.html">What We Know About the NPM Supply Chain Attack | Trend Micro (US)</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Qwen`, `#open-source`, `#large language model`, `#model release`
+**Discussion**: Community members debated mitigations, with one proposing a tool called Packj that uses static and dynamic analysis to detect indicators of compromise. Others suggested using devcontainers for isolation, called for a moratorium on pre-install hooks, and expressed frustration over the fragile dependency system, while another questioned why GitHub couldn&\#x27;t automatically block the attacker&\#x27;s exfiltration repositories.
+
+**Tags**: `#security`, `#supply-chain attack`, `#npm`, `#open-source`, `#dependency management`
 
 ---
 
 <a id="item-2"></a>
-## [LLMs Amplify Existing Expertise Rather Than Replace It](https://www.seangoedecke.com/llms-reward-expertise/) ⭐️ 8.0/10
+## [Google Builds $200B Wall Street Financing Machine for Anthropic](https://www.ft.com/content/549f2e23-5aa2-49c7-9ea6-a9784ab7087c) ⭐️ 9.0/10
 
-In his essay &\#x27;LLMs reward expertise&\#x27;, Sean Gedecke argues that large language models provide disproportionate productivity gains to domain experts, while offering limited benefit to novices without the same background knowledge. This challenges the popular narrative that AI will democratize expertise or make individual expertise less valuable. It suggests that organizations and professionals should focus on cultivating deep knowledge to maximize the benefits of LLMs, and that AI could widen the productivity gap between experts and novices. The article&\#x27;s argument centers on experts&\#x27; ability to evaluate, question, and steer LLM outputs, which novices lack. Commenters also note that &\#x27;signalling expertise&\#x27; in prompts can significantly change the quality of responses, and that using LLMs as an extension of one&\#x27;s mind works better than using them as a replacement.
+Google has quietly assembled a roughly $200 billion infrastructure financing structure to deliver over $150 billion in AI chips to Anthropic, with Broadcom, Apollo, Blackstone, Morgan Stanley, and crypto miners as participants. In June 2026, the special-purpose vehicle Compute SPV completed its first deals, buying about $35 billion in hardware — around 1 gigawatt of compute and 1 million TPUs. This is one of the largest infrastructure financing arrangements ever built, and it could reshape how AI compute is funded by moving hundreds of billions in hardware off corporate balance sheets. The risk-sharing model may become a template for other AI companies lacking credit ratings. Total contracts are worth roughly $200 billion, with about 80% directly tied to chips. Unlike a traditional loan, the structure resembles project financing: Google guarantees data centers, Broadcom buys and helps finance chips, while Apollo and Blackstone purchase hardware and lease it back to Anthropic.
 
-hackernews · MaxMussio · Aug 3, 21:13 · [Discussion](https://news.ycombinator.com/item?id=49161518)
+telegram · zaihuapd · Aug 4, 10:52
 
-**Background**: Large language models \(LLMs\) are AI systems trained on vast text data to generate human-like text. A common assumption is that these tools could eventually replace human experts in fields like coding, writing, or research. This essay pushes back, arguing that the ability to judge the output — knowing what is correct, relevant, or good — is exactly where domain expertise matters, so LLMs act as a force multiplier for those who already have it.
+**Background**: Anthropic has no credit rating, so lenders need risk mitigation. The financing uses a special-purpose vehicle \(SPV\) that buys chips and related equipment, then leases computing capacity to the AI company; lenders finance the assets against long-term customer commitments. This &\#x27;vendor financing&\#x27; model, borrowed from Boeing and GE&\#x27;s practice of marketing aircraft and engines, lets parties avoid putting hundreds of billions in AI hardware on their own balance sheets. Analysts have also flagged &\#x27;circular financing&\#x27; in AI, where chipmakers and cloud providers invest in startups that use the funds to buy their products.
 
-**Discussion**: Community reaction largely agrees with the essay&\#x27;s thesis, using analogies like an &\#x27;amplifying mirror&\#x27; and emphasizing that LLMs reflect the user&\#x27;s own expertise and care. Some commenters warn that taking AI&\#x27;s effectiveness for granted could cause a generation of domain experts to be lost, and that hands-on familiarity with a codebase remains essential even when general knowledge is strong.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.techtimes.com/articles/318207/20260611/anthropic-ai-safety-warning-meets-35b-compute-deal-silicon-valley-cannot-slow-alone.htm">Anthropic AI Safety Warning Meets $35B Compute Deal: Silicon Valley...</a></li>
+<li><a href="https://finance.biggo.com/news/cc3ceaa8-e838-4501-b4c0-13b9fcba9232">Google Orchestrates $200 Billion AI Chip Financing Network in Landmark Infrastructure Deal — BigGo Finance</a></li>
+<li><a href="https://blockeden.xyz/blog/2026/03/06/ai-circular-financing-loop-vendor-financing/">The Great AI Circular Financing Loop: When Vendors Fund Their Own Customers - BlockEden.xyz</a></li>
 
-**Tags**: `#LLMs`, `#expertise`, `#AI`, `#software engineering`, `#productivity`
+</ul>
+</details>
+
+**Tags**: `#AI infrastructure`, `#Google`, `#Anthropic`, `#financing`, `#cloud computing`
 
 ---
 
 <a id="item-3"></a>
-## [OpenAI Lists Ten AI-Powered Advances in Mathematics and CS](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 8.0/10
+## [Custom Color Space and Algorithm for Diverse Skin Tones](https://toneyalexander.github.io/inclusive-color-space/) ⭐️ 8.0/10
 
-OpenAI published an article enumerating ten recent advances in mathematics and theoretical computer science enabled by AI, showcasing concrete results where AI contributed to proofs and discoveries. The post underscores AI&\#x27;s growing, measurable impact on mathematical research, where tools like LLMs are moving from novelties to essential instruments. It has generated substantial community debate about whether AI progress is following an exponential curve and which fields will be transformed next. The full list is not reproduced in the summary, but commenters point to problems including high-dimensional sphere packing and multicolor Ramsey numbers. The announcements connect to recent breakthroughs such as OpenAI&\#x27;s disproof of the unit distance conjecture and the proof of Erdős problem 1196.
+The developer released an interactive web page introducing a simple algorithm and a custom color space for procedurally generating diverse, plausible skin tones for digital art and game development. The project includes a color picker, demos, and detailed explanations of the math. Skin tone selection is often difficult and color spaces like RGB are not intuitive for this task. This approach could make inclusive character creation easier and spark further work on skin-tone-aware color tools. The author notes the methodology is &\#x27;a bit shaky&\#x27; and outlines future work, suggesting the current space is a good-enough approximation rather than a definitive model. The implementation uses function fitting and equation-based transforms on top of the RGB color space.
 
-hackernews · milkshakes · Aug 3, 16:27 · [Discussion](https://news.ycombinator.com/item?id=49157930)
+hackernews · automatoney · Aug 4, 15:16 · [Discussion](https://news.ycombinator.com/item?id=49170165)
 
-**Background**: Automated theorem proving \(ATP\) is a subfield that uses computer programs to prove mathematical theorems, with roots in early computer science. Proof assistants such as Lean and Coq support human–machine collaboration to develop formal proofs. Increasingly, large language models are being used to suggest conjectures and search for proofs, enabling discoveries like solving long-standing problems or disproving conjectures. AI is thus becoming a &\#x27;centaur&\#x27; partner for mathematicians, combining machine search with human insight.
+**Background**: A color space defines how colors are represented numerically; RGB is common but not perceptually uniform or well-suited for skin tones. This project constructs a simplified skin-tone color space by analyzing a range of RGB colors that look like plausible human skin, and provides equations and demos. The goal is to cover the broadest inclusive range of plausible but simplified skin tones.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">Automated theorem proving</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Proof_assistant">Proof assistant - Wikipedia</a></li>
-<li><a href="https://scitechdaily.com/ai-helps-crack-an-87-year-old-math-conjecture-with-one-tiny-formula/">AI Helps Crack an 87-Year-Old Math Conjecture With One Tiny Formula</a></li>
+<li><a href="https://toneyalexander.github.io/inclusive-color-space/">What Colors Are We? Constructing A Color Space For Skin Tones</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Overall sentiment is enthusiastic but tempered: commenters note that AI can handle grinding, case-checking labor that humans cannot, though it still lacks the intuition to generate conjectures. Some see a y=2^x exponential trend and ask which fields will resist it, while others point to specific problems in OpenAI&\#x27;s list as surprisingly intuitive.
+**Discussion**: Commenters reacted positively, praising the presentation and the idea of fitting functions to skin-tone data. Some noted the shape matches data from makeup shades plotted in Oklab, while others pointed out references like Pantone Skin Tones and observed that some generated colors appear slightly green, blue, or purple.
 
-**Tags**: `#AI`, `#mathematics`, `#theoretical computer science`, `#OpenAI`, `#research`
+**Tags**: `#color-science`, `#procedural-generation`, `#digital-art`, `#color-space`, `#skin-tones`
 
 ---
 
 <a id="item-4"></a>
-## [Devtools must be open source so LLMs can modify them directly](https://blog.exe.dev/devtools-must-be-open-source) ⭐️ 8.0/10
+## [DeepSeek V4 Flash Runs on a Single AMD MI300X](https://github.com/ryanzhou/deepseek-v4-flash-mi300x) ⭐️ 8.0/10
 
-A new blog post from exe.dev argues that developer tools must be open source so LLMs can directly modify their code, eliminating the need for configuration systems. The post has sparked a lively community debate. It challenges a core assumption in tool design and proposes that AI coding agents replace configuration with direct source modification. If adopted, it could shift how devtools are built, maintained, and forked, affecting developers and maintainers across the ecosystem. The article reportedly proposes setting up a nightly cron job that fetches upstream changes and rebases local AI-generated modifications, checking that the software still works. Community commenters point out this is unreliable, wasteful, and underestimates the maintenance burden of downstream forks.
+A GitHub project demonstrates running DeepSeek V4 Flash on a single AMD MI300X GPU at roughly 150 tokens per second while preserving the model&\#x27;s full intended weights. It achieves this by trading the original 1M-token context window for a 256k-token one. This is a significant hardware optimization because it shows that a 284B-parameter MoE model \(with 13B active parameters\) can run efficiently on a single accelerator, lowering the hardware barrier for local or cost-sensitive deployment. It also highlights AMD MI300X&\#x27;s large HBM capacity and bandwidth as a competitive option for large-model inference, challenging Nvidia&\#x27;s dominance. The project preserves the model&\#x27;s full intended weights \(MXFP4\) rather than applying additional quantization, with the main tradeoff being context length, reduced from 1M to 256k tokens. The MI300X is an OAM module typically sold in 8-GPU server boxes, not as a standalone PCIe card, and a related 2xMI300X implementation is referenced in the project&\#x27;s prior-art section.
 
-hackernews · bryanmikaelian · Aug 3, 14:15 · [Discussion](https://news.ycombinator.com/item?id=49156111)
+hackernews · zhoutong · Aug 4, 10:00 · [Discussion](https://news.ycombinator.com/item?id=49166386)
 
-**Background**: The post contends that traditional config systems are a workaround because users cannot easily change the behavior of closed-source tools. With LLMs able to read and modify source code, making devtools open source would let users directly edit the program and eliminate configuration layers. This idea draws on long-standing open-source ideals but faces practical questions about maintenance and efficiency.
+**Background**: DeepSeek V4 Flash is a preview of the DeepSeek V4 series: a Mixture-of-Experts model with 284B total parameters and 13B activated, designed for efficient reasoning across a 1M-token context window. AMD MI300X is a data-center GPU with 192GB of HBM3 memory, positioned against Nvidia&\#x27;s data-center accelerators; running large MoE models on a single such GPU requires careful memory and context management. Utilities like Ollama and Hugging Face now list DeepSeek V4 Flash, which helps make it accessible for local experiments.
 
-**Discussion**: Commenters largely agree devtools should be open source but dispute the radical conclusion. simonw notes LLMs make the original open-source dream more feasible, while kelnos and theamk argue that replacing configuration with AI rebuilding is inefficient and unreliable; lalitmaganti, a maintainer of a devtool, warns the approach is too idealistic because engineers just want tools that work.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
+<li><a href="https://ollama.com/library/deepseek-v4-flash">deepseek - v 4 - flash</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Amd_MI300X">Amd MI300X</a></li>
 
-**Tags**: `#open-source`, `#devtools`, `#LLM`, `#software-engineering`
+</ul>
+</details>
+
+**Discussion**: Commenters generally praised the work but raised practical caveats: a single MI300X cannot be bought as a standalone card \(it ships in ~€250K 8-GPU racks\), and the prior-art section misses DwarfStar, which reportedly runs the same model in less memory. Others noted that the 256k context loss is a reasonable tradeoff, comparable to models like Codex, and that DeepSeek V4 Flash should also fit into the 144GB of the future PCIe-based MI350P.
+
+**Tags**: `#DeepSeek`, `#AMD MI300X`, `#LLM inference`, `#quantization`, `#hardware`
 
 ---
 
 <a id="item-5"></a>
-## [MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, 2K Video](https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui) ⭐️ 8.0/10
+## [FedEx Phishing-Like Emails Show Why Users Keep Falling for Scams](https://www.troyhunt.com/thanks-fedex-this-is-why-we-keep-getting-phished/) ⭐️ 8.0/10
 
-ComfyUI announced Day-0 support for MiniMax H3, a new open-weights multimodal video model that accepts text, images, video, and audio inputs and generates video with native stereo sound, up to 2K resolution and 15 seconds per clip. This release lets creators run a next-generation open-weights video model locally in ComfyUI immediately, with native audio generation and 2K output. The strong community response shows it could significantly impact AI media generation workflows. According to the model card, roughly 40% of the model&\#x27;s parameters \(modulation weights\) can be pruned and replaced with a lookup table, cutting total memory from 123.6 GB to 42.5 GB with no quality loss. Users report that a 10-second 480p video takes about 10 minutes on an RTX 4070 Ti Super.
+Security researcher Troy Hunt published a post explaining how legitimate companies like FedEx send emails that mimic phishing patterns, such as customs notices with PDF attachments from individual senders. These practices blur the line between genuine correspondence and scam messages. When trusted brands model their emails on scam-like patterns, users&\#x27; ability to distinguish phishing from legitimate messages is eroded. This makes real phishing attacks more effective and undermines years of security awareness training. Commenters cited concrete examples: a FedEx customs notice sent by &quot;some guy&quot; with a PDF, a Google storage alert using the shortened domain c.gle, and the IRS using commercially available text-to-speech in phone trees. These cases show that attackers can easily replicate the same look and feel without needing advanced techniques.
 
-hackernews · vblanco · Aug 3, 13:34 · [Discussion](https://news.ycombinator.com/item?id=49155629)
+hackernews · stymaar · Aug 4, 21:09 · [Discussion](https://news.ycombinator.com/item?id=49175192)
 
-**Background**: MiniMax H3 is a family of open-weights multimodal video models that support text-to-video, image-to-video, and frame-to-frame generation. ComfyUI is a popular node-based interface for building AI image and video pipelines. Day-0 support means MiniMax H3 is natively integrated into ComfyUI on the same day it was released, allowing users to load the model and run it locally.
+**Background**: Phishing is a form of social engineering where attackers disguise fraudulent messages as legitimate communications to steal credentials or data. Email authentication standards such as SPF, DKIM, and DMARC help receiving servers verify that a message genuinely comes from the declared domain, while BIMI allows brands to display verified logos in supported email clients. However, these protections only help if companies consistently follow secure sending practices; when legitimate senders behave like phishers, users cannot rely on familiar cues.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui">MiniMax H3 Day - 0 Support in ComfyUI : Open Weights, Native Audio...</a></li>
-<li><a href="https://huggingface.co/Comfy-Org/MiniMax-H3">Comfy-Org/ MiniMax - H 3 · Hugging Face</a></li>
-<li><a href="https://hailuoai.video/tools/minimax-h3">MiniMax H 3 Multimodal AI Video Model | Hailuo AI</a></li>
+<li><a href="https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/">What are DMARC, DKIM, and SPF?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Brand_Indicators_for_Message_Identification">Brand Indicators for Message Identification - Wikipedia</a></li>
+<li><a href="https://bimigroup.org/">Home - BIMI Group</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments are largely enthusiastic but raise technical questions. One user questions whether pruning 40% of weights truly yields &quot;no loss in output quality&quot; and whether the approach could apply to LLMs. Other users share performance reports, praising overall quality but noting jank in unusual scenarios and a lingering &quot;AI smoothing&quot; effect in some clips.
+**Discussion**: Commenters largely agreed with the author, sharing their own examples: one person reported a genuine FedEx customs notice that looked like a scam, another questioned the legitimacy of Google&\#x27;s c.gle link, and others pointed to IRS phone systems and the proliferation of cheap generic top-level domains. The overall sentiment was frustration that legitimate organizations add to the confusion instead of making their communications easier to verify.
 
-**Tags**: `#ComfyUI`, `#MiniMax H3`, `#AI video generation`, `#Open weights`, `#Text-to-video`
+**Tags**: `#phishing`, `#security`, `#email`, `#cybersecurity`, `#FedEx`
 
 ---
 
 <a id="item-6"></a>
-## [Andy Pavlo Joins ClickHouse to Launch ClickHouse Labs](https://clickhouse.com/blog/andy-pavlo-joins-clickhouse) ⭐️ 8.0/10
+## [Oxide Computer Raises $445M in Series D Funding Round](https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml) ⭐️ 8.0/10
 
-Andy Pavlo, a prominent database researcher, has joined ClickHouse as VP of Database Research to establish and lead ClickHouse Labs, a new research group. The launch was announced on August 3, 2026. This move bridges academic database research and industry practice, signaling ClickHouse&\#x27;s significant investment in long-term research. It could influence the future direction of OLAP database architecture and inspire more industry-academia collaboration. ClickHouse Labs will be led by Pavlo, who is known for his work on database systems and the popular &\#x27;Database Systems&\#x27; course at Carnegie Mellon. The group will focus on database research, with plans to bridge academic findings into ClickHouse&\#x27;s open-source OLAP engine.
+Oxide Computer has raised $445 million in a Series D round, according to a recent SEC Form D filing. This marks the company&\#x27;s largest funding round to date, following a $200 million Series C reported earlier in 2026. This substantial round signals strong investor confidence in Oxide&\#x27;s mission to challenge conventional cloud infrastructure with cloud-native hardware. The funding could help the company scale production and sales, giving enterprises a new alternative to dominant hyperscaler clouds. The SEC Form D filing indicates a Regulation D exempt offering, and the form itself does not disclose valuation or detailed investor information. Commenters cite Oxide&\#x27;s prior fundraising history as a $44 million Series A in 2023, a $100 million Series B in 2025, and a $200 million Series C in 2026, making the $445 million Series D a significant step up.
 
-hackernews · nikolay\_sivko · Aug 3, 14:09 · [Discussion](https://news.ycombinator.com/item?id=49156011)
+hackernews · depr · Aug 4, 20:13 · [Discussion](https://news.ycombinator.com/item?id=49174407)
 
-**Background**: ClickHouse is an open-source, column-oriented DBMS designed for online analytical processing \(OLAP\) of large datasets. By creating a dedicated research lab, ClickHouse aims to explore new database technologies and maintain its edge in a competitive OLAP market.
+**Background**: Oxide Computer is a startup focused on cloud-native hardware, aiming to rethink how companies purchase and operate cloud infrastructure. Form D is a notice filed with the U.S. SEC for exempt securities offerings under Regulation D, and it is submitted through the SEC&\#x27;s EDGAR electronic system. The cloud-native approach typically uses containerized microservices so applications can run across different environments.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://clickhouse.com/blog/andy-pavlo-founding-clickhouse-labs">ClickHouse launches ClickHouse Labs with Andy Pavlo as VP of Database Research | ClickHouse</a></li>
-<li><a href="https://www.businesswire.com/news/home/20260803890510/en/ClickHouse-Launches-ClickHouse-Labs-With-Andy-Pavlo-as-VP-of-Database-Research">ClickHouse Launches ClickHouse Labs With Andy Pavlo as VP of Database Research</a></li>
-<li><a href="https://en.wikipedia.org/wiki/ClickHouse">ClickHouse - Wikipedia</a></li>
+<li><a href="https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/what-form-d">What is Form D? - SEC.gov</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Form_D">Form D - Wikipedia</a></li>
+<li><a href="https://aws.amazon.com/what-is/cloud-native/">What is Cloud Native? - Cloud Native Architecture Explained - AWS</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters welcomed the news, with several expressing hope that ClickHouse will fund academic database research amid declining government support. Some also speculated about convergence trends among fast OLAP products, and one commenter praised Pavlo&\#x27;s CMU lectures and the inspiration they provided.
+**Discussion**: Community sentiment is largely positive: users cheered the news and praised Jessie Frazelle&\#x27;s involvement, with one saying they trust anything she works on. However, an engineering VP said their sales inquiry was never acknowledged despite spending about $900,000 per year on AWS. Another commenter questioned whether Oxide actually ships hardware to customers, since they have not seen real deployments.
 
-**Tags**: `#ClickHouse`, `#database research`, `#Andy Pavlo`, `#OLAP`, `#industry news`
+**Tags**: `#funding`, `#hardware`, `#cloud-computing`, `#infrastructure`, `#oxide-computer`
 
 ---
 
 <a id="item-7"></a>
-## [Jane Street&\#x27;s Bonsai Brings OCaml to Full-Stack Web Development](https://github.com/janestreet/bonsai) ⭐️ 8.0/10
+## [Xbox Outage Blocks Disc Games, Reigniting Digital Ownership Debate](https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/) ⭐️ 8.0/10
 
-Jane Street&\#x27;s Bonsai, a UI library for building reactive web applications in OCaml, has drawn significant community attention for enabling shared types between backend and frontend. It is currently available publicly on GitHub. Bonsai matters because it lets OCaml developers write full-stack applications with the same language and types, reducing boilerplate and increasing type safety. It also represents a notable production-grade UI framework from a major financial technology firm, potentially influencing OCaml&\#x27;s adoption in web development. Bonsai is partly inspired by Elm and is designed for building reusable UI components within Incremental-style frameworks such as Incr\_dom or React. At Jane Street, it has been used to build many internal web applications, including tools that interact with trading systems.
+A major Xbox outage prevented users from playing games they own on physical discs, because Microsoft&\#x27;s server-side license verification was unreachable. Microsoft has acknowledged the problem and said it will change its licensing system so disc games are not blocked during server outages or offline play. This incident demonstrates that even physical game discs are entangled with DRM and online infrastructure, undercutting the idea of true ownership. It strengthens arguments that gamers should receive stronger rights to access, preserve, and resell the software they buy. Microsoft acknowledged that disc-based games undergo license verification, but said such verification should not prevent access during server issues or offline. The company is preparing a fix and says it will change the licensing system after the widely reported outage.
 
-hackernews · KolmogorovComp · Aug 3, 08:29 · [Discussion](https://news.ycombinator.com/item?id=49152842)
+hackernews · surprisetalk · Aug 4, 12:01 · [Discussion](https://news.ycombinator.com/item?id=49167448)
 
-**Background**: Bonsai is an OCaml library from Jane Street, a quantitative trading firm known for using OCaml extensively. Many of Jane Street&\#x27;s internal systems previously had only terminal UIs, and Bonsai made it easier to port existing typed business logic to the web. The library supports reactive programming and helps developers build dynamic web apps with OCaml&\#x27;s strong type system.
+**Background**: Always-online DRM requires consumers to maintain a connection to a server before they can use a product, often to verify licenses. Microsoft has pushed digital distribution heavily for Xbox, and even disc-based games now rely on online license checks. This practice has long been controversial because it introduces a single point of failure and forces legitimate owners to depend on server availability.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/janestreet/bonsai">GitHub - janestreet / bonsai : A library for building dynamic webapps...</a></li>
-<li><a href="https://en.mycoding.id/bonsai-janestreet-s-ui-library-57684.html">Bonsai : Janestreet &#x27;s Ui Library</a></li>
-<li><a href="https://opam.ocaml.org/packages/bonsai/">opam - bonsai</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Always-online_DRM">Always-online DRM</a></li>
+<li><a href="https://ixbt.games/en/news/2026/07/30/425735-xbox-izmenit-sistemu-licenzii-posle-skandala-s-nedostupnymi-igrami.html">Xbox to Change Licensing System After Inaccessible Games Scandal</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community sentiment is cautiously positive. Some developers ask about real-world production adoption beyond Jane Street, while others are excited about sharing types across frontend and backend. There is also discussion comparing Bonsai to Melange, and some criticism of its default aesthetics, though performance is acknowledged.
+**Discussion**: Commenters expressed frustration at the fragility of modern gaming, contrasting it with older consoles like the GameCube and PS3 where games worked offline and via LAN. They argued the real issue is ownership, not physical versus digital, and called for rights to keep, back up, resell, and pass on games. Some also criticized Xbox&\#x27;s online login requirements even in titles such as the Master Chief Collection.
 
-**Tags**: `#OCaml`, `#UI`, `#Jane Street`, `#Frontend`, `#Functional Programming`
+**Tags**: `#Xbox`, `#DRM`, `#digital-ownership`, `#gaming`, `#outage`
 
 ---
 
 <a id="item-8"></a>
-## [Kimi K3 Architecture Analyzed: Memory, Depth Attention, Latent Experts](https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the) ⭐️ 8.0/10
+## [PipeNetwork&\#x27;s MLX Port Brings MiniMax-H3 Video Generation to Apple Silicon](https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything) ⭐️ 8.0/10
 
-SemiAnalysis published a deep-dive analysis of Kimi K3, focusing on its compressed memory, attention across depth, latent expert routing, and inference performance. The article details how these architectural components differ from previous large language model designs. Kimi K3 combines memory compression, depth-wise attention, and latent expert routing in a way that could substantially improve long-context handling and inference efficiency. This analysis from a respected source gives AI researchers and systems engineers a rare technical look at a cutting-edge production model. The architecture uses compressed memory similar to Compressive Transformers, which compress older activations instead of discarding them, extending effective context length. It also implements attention across model depth \(analogous to attention residuals\) and employs latent expert routing that makes expert selection decisions in a low-dimensional latent space.
+Simon Willison demonstrates PipeNetwork/minimax-h3-mlx, an MLX port of MiniMax&\#x27;s omni-modal MiniMax-H3 model, running on his M5 Max MacBook Pro. He generated a 15-second video clip from a text prompt, with model downloads around 115 GB and generation taking under 45 minutes. This makes a frontier open-weights omni-modal video model practical on commodity Apple hardware, reducing reliance on cloud GPU clusters. It also highlights MLX&\#x27;s growing ecosystem as a viable path for running large generative models locally on Apple Silicon. The MLX port uses an 8-bit quantized version of MiniMax-H3 and pairs it with the FL2VA component from the original model. Willison notes the generated audio was speech-like garbage because he did not follow MiniMax&\#x27;s video prompting guide, which contains guidance for controlling audio output.
 
-rss · Semianalysis · Aug 3, 19:42
+rss · Simon Willison · Aug 4, 19:10
 
-**Background**: Compressed memory, introduced in Compressive Transformers, extends the cache of past hidden states by applying a learned compression operation to activations that would otherwise be evicted, allowing the model to attend over a much longer history. Attention across depth, sometimes called attention residuals, lets attention heads read representations from previous layers in addition to the current layer, enabling information flow along the network&\#x27;s depth rather than only across token positions. Latent expert routing, such as Mixture of Latent Experts \(MoLE\), keeps routing decisions in a low-dimensional latent space, improving expert selection efficiency and scalability in large Mixture-of-Experts models.
+**Background**: MiniMax-H3 is a general-purpose omni-modal generative system that accepts text, images, audio, and video, and can generate up to 15-second video clips with native audio in a single pass. MLX is Apple&\#x27;s open-source array framework designed for machine learning on Apple silicon, taking advantage of its unified memory architecture. This project ports MiniMax-H3 to MLX, enabling the model to run locally on Apple hardware rather than on remote servers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/pdf/1911.05507">COMPRESSIVE TRANSFORMERS FOR LONG-RANGE SEQUENCE MODELLING Jack W. Rae∗∗† ‡</a></li>
-<li><a href="https://sebastianraschka.com/llm-architecture-gallery/attention-residuals/">Attention Residuals (AttnRes) | Sebastian Raschka, PhD</a></li>
-<li><a href="https://www.emergentmind.com/topics/mixture-of-latent-experts-mole">Mixture of Latent Experts (MoLE)</a></li>
+<li><a href="https://github.com/ml-explore/mlx">GitHub - ml-explore/mlx: MLX: An array framework for Apple ...</a></li>
+<li><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H3: An Open Model Breaking the Boundaries Between ...</a></li>
+<li><a href="https://fal.ai/minimax-h3">MiniMax H3 - Open-Weights General-Purpose Multimodal Video ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Model Architecture`, `#Inference`, `#Machine Learning`, `#Kimi K3`
+**Tags**: `#MLX`, `#MiniMax-H3`, `#video generation`, `#Apple Silicon`, `#open source`
 
 ---
 
 <a id="item-9"></a>
-## [DNA Device Flaw Exposes 30 Years of Crime Evidence to Tampering](https://www.wsj.com/tech/cybersecurity/security-flaw-placed-30-years-of-dna-evidence-at-risk-of-hacking-1932775a) ⭐️ 8.0/10
+## [China Issues First Mandatory National Standard for L3/L4 Autonomous Driving](https://wap.miit.gov.cn/jgsj/zbys/qcgy/art/2026/art_a1d2072374884287b67048a77560014e.html) ⭐️ 8.0/10
 
-Researchers discovered a critical vulnerability in DNA analysis machines used by most U.S. crime labs, allowing undetectable modification of DNA scan data. Thermo Fisher Scientific acknowledged the flaw in July and released a security advisory and a software update with digital signatures last Friday. This flaw could allow attackers to tamper with forensic DNA evidence dating back to 1995, potentially affecting criminal investigations and convictions. It also underscores the inconsistent cybersecurity protections across more than 200 U.S. crime labs, which lack unified regulation. Using AI-generated code from Anthropic&\#x27;s Claude, the researchers altered DNA scan files in about 45 minutes, and the modified files did not trigger alerts in commonly used analysis software. Thermo Fisher stated no real-world exploitation has been reported, and it is coordinating with the U.S. Cybersecurity and Infrastructure Security Agency \(CISA\).
+On July 30, 2026, China&\#x27;s Ministry of Industry and Information Technology \(MIIT\) published GB 44721—2026, &\#x27;Safety Requirements for Autonomous Driving Systems of Intelligent Connected Vehicles&\#x27; — the country&\#x27;s first mandatory national standard for L3 and L4 autonomous driving. The standard will take effect on July 1, 2027. This transforms autonomous-driving safety rules from voluntary recommendations into legal requirements, setting a minimum safety bar that all L3/L4 vehicles must meet to enter the Chinese market. It will reshape the development and approval process for automakers, suppliers, and technology companies building higher-level autonomous driving systems in the world&\#x27;s largest auto market. The standard applies to M-class \(passenger\) and N-class \(truck\) vehicles equipped with L3 or L4 systems, but excludes automatic parking systems. It upgrades a 2024 recommended standard into a mandatory one, covering four dimensions: enterprise life-cycle safety assurance, dynamic driving capability, human-machine interaction and user notification, and multi-dimensional inspection and testing; L3 systems must also have driver takeover capability monitoring.
 
-telegram · zaihuapd · Aug 3, 05:15
+telegram · zaihuapd · Aug 4, 13:06
 
-**Background**: DNA analysis devices, such as genetic analyzers, are used in forensic laboratories to generate DNA profiles from crime-scene samples, producing data files that specialized software interprets for matches. Digital signatures are based on asymmetric cryptography, allowing a receiver to verify that a file has not been altered since it was signed. The vulnerability affected how these instruments handle data files, making tampering possible if laboratory access controls are bypassed.
+**Background**: In China, national standards come in two types: mandatory standards \(GB, no &\#x27;T&\#x27;\) and recommended standards \(GB/T\). Mandatory standards must be followed by law, while recommended ones are voluntary. L3 \(conditional\) and L4 \(highly automated\) driving are the two highest levels of autonomous driving defined by SAE, where the system handles most driving tasks but may still require a human driver to intervene in certain situations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ip.net.coffee/claude/news/20260803b.html">美犯罪实验室 DNA 设 备 曝漏洞：30...</a></li>
-<li><a href="https://aiplus.360.cn/cjwt/5305.html">数字签名：保证数据安全的关键技术 - 360亿方智能</a></li>
+<li><a href="http://www.ce.cn/xwzx/gnsz/gdxw/202608/t20260804_3128645.shtml">ce.cn/xwzx/gnsz/gdxw/202608/t20260804_3128645.shtml</a></li>
+<li><a href="https://www.autohome.com.cn/news/202608/1316205.html">autohome.com.cn/news/202608/1316205.html</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/695754743">一文看懂规范标准的强制性标准和推荐性标准 - 知乎</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#cybersecurity`, `#DNA analysis`, `#forensics`, `#vulnerability`, `#Thermo Fisher`
+**Tags**: `#autonomous driving`, `#regulation`, `#national standard`, `#China`, `#safety`
 
 ---
 
 <a id="item-10"></a>
-## [Nvidia CMP 170HX miners cracked to unlock 80GB memory, prices surge](https://finance.sina.com.cn/tech/roll/2026-08-03/doc-inikzqsf4659769.shtml) ⭐️ 8.0/10
+## [White House Reverses on Open-Source AI Rules, Splitting Silicon Valley](https://www.nytimes.com/2026/08/04/technology/ai-washington-regulation-whiplash.html) ⭐️ 8.0/10
 
-Researchers at Arizona State University publicly released a method to crack Nvidia CMP 170HX mining cards, exploiting a stack overflow in the Falcon security coprocessor to bypass OTP fuse locks. The hack unlocks up to 80GB of memory and boosts FP32 performance from 0.39 TFLOPS to 94 TFLOPS, causing second-hand prices to soar. This is significant because it turns a heavily restricted mining card into a cheap AI compute option, threatening Nvidia&\#x27;s product segmentation strategy and affecting the market for affordable AI hardware. It also highlights security weaknesses in Nvidia&\#x27;s GPU protection mechanisms. The CMP 170HX uses the same GA100 die as the A100, but with 4480 CUDA cores and 8GB HBM2e factory-limited by OTP fuses. The exploit uses a DMA unbounded overflow in the Falcon coprocessor to hijack privileges; community tests show unlocked cards can run AI image generation and LLM inference on Windows and Linux, though stability and per-batch unlock limits remain uncertain.
+The Trump administration, after considering sanctions and trade blacklists against Chinese open-source AI, shifted to a framework requiring pre-release cybersecurity review of AI models. On August 4, 2026, the White House invited tech companies to discuss the new rules, citing competition from China&\#x27;s Kimi model. This policy whiplash will shape the openness of the U.S. AI ecosystem and affect global competition with China&\#x27;s open-source models. It also exposes a major rift among U.S. tech giants, with OpenAI and Anthropic pushing for restrictions while Nvidia, Meta, and others defend open ecosystems. The proposed framework would review models for cybersecurity risks before public release, a significant shift from earlier proposals of sanctions and trade blacklists. Jensen Huang posted on X for the first time last month to defend open source and helped form a security alliance with over 230 members.
 
-telegram · zaihuapd · Aug 3, 11:29
+telegram · zaihuapd · Aug 4, 15:22
 
-**Background**: The CMP 170HX is a cryptocurrency mining card released by Nvidia in 2021, based on a cut-down GA100 GPU with a massive heatsink and no active cooling, originally priced around $5000. Nvidia uses OTP fuses to permanently lock down hardware features like compute and memory, and Falcon coprocessors embedded in GPUs are designed to prevent misprogramming. These constraints were previously considered irreversible, making this exploit notable.
+**Background**: Kimi is a series of large language models developed by Moonshot AI, a Chinese AI startup founded in March 2023 by Tsinghua alumni including Yang Zhilin. Moonshot AI is one of China&\#x27;s six &\#x27;AI Tigers,&\#x27; and its latest models, such as Kimi K3, are reported to rival top U.S. models in some benchmarks, intensifying U.S. policy debates about open-source AI.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.techpowerup.com/289310/nvidia-cmp-170hx-mining-card-tested-based-on-ga100-gpu-sku">NVIDIA CMP 170HX Mining Card Tested, Based on GA100 GPU SKU | TechPowerUp</a></li>
-<li><a href="https://videocardz.com/newz/nvidia-cmp-170hx-mining-card-with-ga100-gpu-has-a-massive-heatspreader">NVIDIA CMP 170HX mining card with GA100 GPU has a massive heatspreader - VideoCardz.com</a></li>
-<li><a href="https://download.nvidia.com/open-gpu-doc/Falcon-Security/1/Falcon-Security.html">NVIDIA Falcon Security</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kimi_%28chatbot%29">Kimi (chatbot) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Moonshot_AI">Moonshot AI - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Yang_Zhilin">Yang Zhilin - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community sentiment is largely enthusiastic, with users validating the unlock on live systems and noting the huge price-performance improvement for AI workloads. Some express concerns about long-term reliability, potential Nvidia countermeasures, and variability in unlock success across different card batches. No official comments are included in the news item.
-
-**Tags**: `#hardware`, `#security`, `#Nvidia`, `#AI computing`, `#exploit`
-
----
-
-<a id="item-11"></a>
-## [Apple Sues UK Government Over iCloud Backdoor Demand](https://www.ft.com/content/2cc9c96a-0e5b-4c33-a95a-3d11072a145c?syn-25a6b1a6=1) ⭐️ 8.0/10
-
-Apple has filed a legal challenge with the UK&\#x27;s Investigatory Powers Tribunal against the government&\#x27;s Technical Capability Notice, which would require Apple to provide access to encrypted iCloud backups of UK users. This case tests the UK government&\#x27;s power to compel technology companies to weaken encryption, with significant implications for global privacy, security, and the future of end-to-end encryption. The ruling could set a precedent for how democratic governments balance law enforcement needs against user privacy. Apple withdrew iCloud Advanced Data Protection \(end-to-end encryption\) for UK users in February 2025, after an earlier demand affecting UK and US users was withdrawn and replaced with a notice targeting only UK users. Privacy International and Liberty have also challenged the TCN, and the tribunal has scheduled a case management hearing for next month.
-
-telegram · zaihuapd · Aug 3, 15:40
-
-**Background**: The Technical Capability Notice is a legal instrument under the UK&\#x27;s Investigatory Powers Act 2016, which allows the Home Secretary to impose obligations on operators to assist with interception of communications. The Investigatory Powers Tribunal is a UK court that hears complaints about surveillance by public bodies. Apple&\#x27;s Advanced Data Protection is an optional iCloud feature that encrypts data end-to-end, so even Apple lacks the keys to decrypt it.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Technical_capability_notice">Technical capability notice</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Investigatory_Powers_Tribunal">Investigatory Powers Tribunal</a></li>
-<li><a href="https://support.apple.com/en-us/108756">How to turn on Advanced Data Protection for iCloud - Apple Support</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Apple`, `#encryption`, `#privacy`, `#UK law`, `#iCloud`
+**Tags**: `#AI政策`, `#开源AI`, `#中美竞争`, `#监管`, `#人工智能`
 
 ---
 

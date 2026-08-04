@@ -1,256 +1,248 @@
 # Horizon 每日速递 - 2026-08-04
 
-> 从 33 条内容中筛选出 11 条重要资讯。
+> 从 38 条内容中筛选出 10 条重要资讯。
 
 ---
 
-1. [Qwen 发布 3.8-Max：2.4 万亿参数，首次开源 Max 级模型](#item-1) ⭐️ 9.0/10
-2. [LLM 放大现有专长而非取代它](#item-2) ⭐️ 8.0/10
-3. [OpenAI 列出十项 AI 驱动的数学与计算机科学进展](#item-3) ⭐️ 8.0/10
-4. [开发者工具必须开源，以便 LLM 直接修改源码](#item-4) ⭐️ 8.0/10
-5. [ComfyUI 首日支持 MiniMax H3：开放权重、原生音频与 2K 视频](#item-5) ⭐️ 8.0/10
-6. [Andy Pavlo 加盟 ClickHouse，创立 ClickHouse Labs](#item-6) ⭐️ 8.0/10
-7. [简街 Bonsai 让 OCaml 进入全栈 Web 开发](#item-7) ⭐️ 8.0/10
-8. [Kimi K3 架构解析：压缩内存、跨层注意力与潜在专家路由](#item-8) ⭐️ 8.0/10
-9. [DNA 设备漏洞威胁 30 年犯罪证据安全](#item-9) ⭐️ 8.0/10
-10. [英伟达 170HX 矿卡破解解锁 80GB 显存 价格飙升](#item-10) ⭐️ 8.0/10
-11. [苹果就 iCloud 后门要求起诉英国政府](#item-11) ⭐️ 8.0/10
+1. [Keyv 及相关 npm 包在活跃的 Shai-Hulud 供应链攻击中遭到入侵](#item-1) ⭐️ 9.0/10
+2. [谷歌为 Anthropic 搭建 2000 亿美元华尔街融资机器](#item-2) ⭐️ 9.0/10
+3. [为多样化肤色定制的色彩空间与算法](#item-3) ⭐️ 8.0/10
+4. [DeepSeek V4 Flash 在单块 AMD MI300X 上运行](#item-4) ⭐️ 8.0/10
+5. [联邦快递邮件酷似钓鱼，侵蚀信任助长诈骗](#item-5) ⭐️ 8.0/10
+6. [Oxide Computer 完成 4.45 亿美元 D 轮融资](#item-6) ⭐️ 8.0/10
+7. [Xbox 宕机导致光盘游戏无法游玩，数字所有权争议再起](#item-7) ⭐️ 8.0/10
+8. [PipeNetwork 推出 MiniMax-H3 的 MLX 移植版，让 Apple Silicon 也能生成视频](#item-8) ⭐️ 8.0/10
+9. [我国发布首部 L3/L4 自动驾驶强制性国标](#item-9) ⭐️ 8.0/10
+10. [白宫开源 AI 监管急转弯，硅谷立场分裂](#item-10) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Qwen 发布 3.8-Max：2.4 万亿参数，首次开源 Max 级模型](https://qwen.ai/blog?id=qwen3.8) ⭐️ 9.0/10
+## [Keyv 及相关 npm 包在活跃的 Shai-Hulud 供应链攻击中遭到入侵](https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack) ⭐️ 9.0/10
 
-通义千问发布了 Qwen 3.8-Max，这是一个总参数 2.4 万亿、活跃参数 950 亿的混合专家模型，并宣布将于下周开源权重——这是 Qwen 首次开源 Max 级别模型。 这标志着开源 AI 的一个重要里程碑：Qwen 最强模型将向社区开放。此举可能会显著推动围绕 MoE 架构和超大规模推理的研究与开发。 该模型基于 Qwen 3.5 架构，在编码、工作、研究和长周期任务方面表现出色。在编码测试中，它自主运行超过 10 天，并在 WWW2025 多模态对话意图识别竞赛中击败 526 支队伍中的 458 支；目前已在 QwenCloud 上提供 API 服务。
+一种名为 Shai-Hulud 的自复制蠕虫正在积极入侵 Keyv npm 包及其相关依赖，同时攻击 npm 生态系统中数百个其他包。该攻击仍在持续，已引发研究人员和政府机构的紧急安全警告。 此次攻击针对 Keyv 等被广泛使用的开源包，Keyv 有数百个下游依赖项目，因此入侵可能波及无数应用程序。这凸显了 npm 依赖链的系统性脆弱性，以及改进供应链安全实践的紧迫性。 该蠕虫已入侵超过 500 个包，通过 pre-install 钩子和自动化凭证窃取进行传播。攻击还利用被攻陷的维护者账户发布恶意更新，这使得在没有行为分析的情况下难以检测。
 
-telegram · zaihuapd · 8月3日 02:31
+hackernews · cimi\_ · 8月4日 11:01 · [社区讨论](https://news.ycombinator.com/item?id=49166874)
 
-**背景**: Qwen 3.8-Max 采用混合专家（MoE）架构，该架构通过每个 token 仅激活部分参数来扩展总参数规模，同时保持计算高效。在 MoE 模型中，总参数代表完整的知识容量，而活跃参数决定每次推理的计算成本。这种方法已成为前沿大语言模型的标准做法。
+**背景**: npm 注册表是 JavaScript 和 Node.js 的默认包管理器，针对它的供应链攻击正变得越来越普遍。Shai-Hulud 是一种自我传播的蠕虫，通过入侵包来窃取凭证并传播恶意代码，这标志着从传统一次性载荷攻击的重大演变。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained - Hugging Face</a></li>
-<li><a href="https://medium.com/@csburakkilic/understanding-moe-architectures-the-difference-between-total-and-active-parameters-ad1d161fccaa">Understanding MoE Architectures: The Difference Between Total and Active Parameters | by Burak Kılıç | Medium</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/npm-supply-chain-attack/">&quot;Shai-Hulud&quot; Worm Compromises npm Ecosystem in Supply Chain Attack (Updated November 26)</a></li>
+<li><a href="https://www.cisa.gov/news-events/alerts/2025/09/23/widespread-supply-chain-compromise-impacting-npm-ecosystem">Widespread Supply Chain Compromise Impacting npm Ecosystem | CISA</a></li>
+<li><a href="https://www.trendmicro.com/en_us/research/25/i/npm-supply-chain-attack.html">What We Know About the NPM Supply Chain Attack | Trend Micro (US)</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Qwen`, `#open-source`, `#large language model`, `#model release`
+**社区讨论**: 社区成员就缓解措施展开辩论，有人提出了一个名为 Packj 的工具，通过静态和动态分析来检测入侵指标。其他人建议使用开发容器进行隔离，呼吁暂停使用 pre-install 钩子，并对脆弱的依赖系统表示不满，还有人质疑为何 GitHub 不能自动阻止攻击者的数据外传仓库。
+
+**标签**: `#security`, `#supply-chain attack`, `#npm`, `#open-source`, `#dependency management`
 
 ---
 
 <a id="item-2"></a>
-## [LLM 放大现有专长而非取代它](https://www.seangoedecke.com/llms-reward-expertise/) ⭐️ 8.0/10
+## [谷歌为 Anthropic 搭建 2000 亿美元华尔街融资机器](https://www.ft.com/content/549f2e23-5aa2-49c7-9ea6-a9784ab7087c) ⭐️ 9.0/10
 
-在文章《LLM 奖励专长》中，肖恩·格德克认为，大语言模型为领域专家带来不成比例的生产力提升，而对缺乏相关背景知识的新手帮助有限。 这挑战了“AI 将让专长大众化或降低个人专家价值”的流行叙事。它表明，组织和个人应注重培养深厚知识以最大化 LLM 的收益，同时 AI 可能拉大专家与新手之间的生产力差距。 文章的核心论点是：专家能够评估、质疑并引导 LLM 的输出，而新手缺乏这种能力。评论者还指出，在提示词中“表明专家身份”可以显著改变回答质量，并且把 LLM 当作大脑的延伸比当作替代品效果更好。
+谷歌悄然搭建了约 2000 亿美元的基础设施融资架构，向 Anthropic 交付超过 1500 亿美元的 AI 芯片，参与方包括博通、阿波罗、黑石、摩根士丹利及多家加密矿企。2026 年 6 月，特殊目的载体 Compute SPV 完成首批交易，购入约 350 亿美元硬件，约合 1 吉瓦算力、100 万颗 TPU。 这是有史以来规模最大的基础设施融资安排之一，可能重塑 AI 算力的融资方式，将数千亿美元的硬件从企业资产负债表中剥离。这种风险共担模式可能成为其他缺乏信用评级的 AI 公司效仿的模板。 合同总额约 2000 亿美元，约八成与芯片直接挂钩。与传统贷款不同，该结构类似项目融资：谷歌为数据中心提供担保，博通购买并协助融资芯片，阿波罗和黑石购买硬件后回租给 Anthropic。
 
-hackernews · MaxMussio · 8月3日 21:13 · [社区讨论](https://news.ycombinator.com/item?id=49161518)
+telegram · zaihuapd · 8月4日 10:52
 
-**背景**: 大语言模型（LLM）是在海量文本数据上训练、能生成类人文本的 AI 系统。人们常假设这类工具最终会取代编程、写作或研究等领域的专家。这篇文章提出反驳，认为判断输出质量的能力——知道什么是正确、相关或优秀的——恰恰是领域专长的关键所在，因此 LLM 对于已具备专长的人相当于“力量倍增器”。
+**背景**: Anthropic 没有信用评级，因此贷款方需要风险缓释措施。该融资通过特殊目的载体（SPV）购买芯片及相关设备，再将算力租赁给 AI 公司；贷款方以长期客户承诺为基础为资产提供融资。这种&\#x27;厂商融资&\#x27;模式借鉴了波音和 GE 推销飞机与发动机的做法，让各方都不必把数百亿美元 AI 硬件压在自家资产负债表上。分析师还指出，AI 领域存在&\#x27;循环融资&\#x27;现象，即芯片制造商和云服务商投资 AI 初创公司，而这些公司又用资金购买它们的产品。
 
-**社区讨论**: 社区反应总体上赞同文章论点，有人用“放大镜”比喻，强调 LLM 反映用户自身的专业水平和用心程度。一些评论者警告说，如果人们理所当然地认为 AI 总是有效，可能会导致一代领域专家流失；还有人指出，即使通用知识很强，亲自动手熟悉代码库仍然至关重要。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.techtimes.com/articles/318207/20260611/anthropic-ai-safety-warning-meets-35b-compute-deal-silicon-valley-cannot-slow-alone.htm">Anthropic AI Safety Warning Meets $35B Compute Deal: Silicon Valley...</a></li>
+<li><a href="https://finance.biggo.com/news/cc3ceaa8-e838-4501-b4c0-13b9fcba9232">Google Orchestrates $200 Billion AI Chip Financing Network in Landmark Infrastructure Deal — BigGo Finance</a></li>
+<li><a href="https://blockeden.xyz/blog/2026/03/06/ai-circular-financing-loop-vendor-financing/">The Great AI Circular Financing Loop: When Vendors Fund Their Own Customers - BlockEden.xyz</a></li>
 
-**标签**: `#LLMs`, `#expertise`, `#AI`, `#software engineering`, `#productivity`
+</ul>
+</details>
+
+**标签**: `#AI infrastructure`, `#Google`, `#Anthropic`, `#financing`, `#cloud computing`
 
 ---
 
 <a id="item-3"></a>
-## [OpenAI 列出十项 AI 驱动的数学与计算机科学进展](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 8.0/10
+## [为多样化肤色定制的色彩空间与算法](https://toneyalexander.github.io/inclusive-color-space/) ⭐️ 8.0/10
 
-OpenAI 发布了一篇文章，列举了 AI 在数学和理论计算机科学领域推动的十项最新进展，展示了 AI 在证明和发现方面取得的具体成果。 这篇文章凸显了 AI 在数学研究中日益显著的实际影响——LLM 等工具正从新奇事物变成必备工具。它也引发了社区广泛讨论，即 AI 进展是否呈指数曲线增长，以及接下来哪些领域将被改变。 摘要未提供完整列表，但评论者指出其中包含高维球堆积和多色拉姆齐数等问题。这些进展与近期成果相关，例如 OpenAI 对单位距离猜想的证伪以及 Erdős 难题 1196 的解决。
+开发者发布了一个交互式网页，介绍一种简单算法和自定义色彩空间，用于在数字艺术和游戏开发中程序化生成多样化且合理的肤色。该项目包含取色器、演示以及详细的数学原理说明。 肤色选择通常很困难，而 RGB 等色彩空间对此并不直观。这种方法有望让更具包容性的角色创建变得更容易，并激发更多关于肤色感知色彩工具的研究。 作者承认方法论“有点不稳”，并列出了未来工作方向，表明当前空间是一个“足够好”的近似而非最终模型。实现基于 RGB 色彩空间，使用函数拟合和基于方程的变换。
 
-hackernews · milkshakes · 8月3日 16:27 · [社区讨论](https://news.ycombinator.com/item?id=49157930)
+hackernews · automatoney · 8月4日 15:16 · [社区讨论](https://news.ycombinator.com/item?id=49170165)
 
-**背景**: 自动定理证明（ATP）是利用计算机程序证明数学定理的子领域，其根源可追溯到计算机科学早期。Lean、Coq 等证明助手通过人机协作来开发形式化证明。如今，大型语言模型越来越多地被用来提出猜想和搜索证明，从而促成了长期难题的解决或猜想的证伪。因此，AI 正成为数学家的“半人马”伙伴，将机器搜索与人类洞察结合起来。
+**背景**: 色彩空间用数值定义颜色的表示方式；RGB 很常用，但它在感知上并不均匀，也不适合表示肤色。该项目通过分析 RGB 中看起来像合理人类肤色的颜色范围，构建了一个简化的肤色色彩空间，并提供相应公式和演示。其目标是覆盖最广泛、包容的合理（但简化）肤色范围。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">Automated theorem proving</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Proof_assistant">Proof assistant - Wikipedia</a></li>
-<li><a href="https://scitechdaily.com/ai-helps-crack-an-87-year-old-math-conjecture-with-one-tiny-formula/">AI Helps Crack an 87-Year-Old Math Conjecture With One Tiny Formula</a></li>
+<li><a href="https://toneyalexander.github.io/inclusive-color-space/">What Colors Are We? Constructing A Color Space For Skin Tones</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 整体情绪热情而审慎：评论者指出，AI 能处理人类无法完成的繁琐、逐项检验的工作，但仍缺乏提出猜想的直觉。有人认为这是 y=2^x 的指数趋势，并追问哪些领域会抵抗这种变化；也有人指出 OpenAI 列表中具体问题令人惊讶地直观。
+**社区讨论**: 评论者反应积极，称赞演示效果以及将函数拟合到肤色数据上的想法。有人指出其形状与在 Oklab 中绘制的粉底色号数据一致，也有人提到了 Pantone Skin Tones 等参考，并观察到部分生成颜色略显绿、蓝或紫。
 
-**标签**: `#AI`, `#mathematics`, `#theoretical computer science`, `#OpenAI`, `#research`
+**标签**: `#color-science`, `#procedural-generation`, `#digital-art`, `#color-space`, `#skin-tones`
 
 ---
 
 <a id="item-4"></a>
-## [开发者工具必须开源，以便 LLM 直接修改源码](https://blog.exe.dev/devtools-must-be-open-source) ⭐️ 8.0/10
+## [DeepSeek V4 Flash 在单块 AMD MI300X 上运行](https://github.com/ryanzhou/deepseek-v4-flash-mi300x) ⭐️ 8.0/10
 
-exe.dev 博客发表新文章，主张开发者工具必须开源，以便 LLM 能直接修改其源码，从而取消配置系统。这篇文章引发了社区的热烈讨论。 这一观点挑战了工具设计中的一个核心假设，提出让 AI 编程代理通过直接修改源码来取代配置系统。如果被采纳，可能会改变开发者工具的构建、维护和分叉方式，影响整个生态中的开发者和维护者。 文章提议设置一个夜间定时任务，拉取上游变更并将本地 AI 修改 rebase 到上游之上，同时检查软件是否仍能正常工作。社区评论者指出这种做法并不可靠，浪费资源，而且低估了下游分支的维护负担。
+GitHub 上的一个项目展示了在单块 AMD MI300X GPU 上运行 DeepSeek V4 Flash，速度约为每秒 150 token，并保留模型的完整原始权重。实现方式是将原本 1M token 的上下文窗口缩减为 256k token。 这是一项重要的硬件优化成果，因为它表明参数量达 284B 的 MoE 模型（激活参数 13B）可以在单块加速卡上高效运行，从而降低本地或成本敏感场景的部署门槛。同时它也凸显了 AMD MI300X 的大容量 HBM 和带宽在大型模型推理方面的竞争力，对 Nvidia 的主导地位构成挑战。 该项目保留模型的完整原始权重（MXFP4），而不是额外量化，主要折中是上下文长度从 1M token 降到 256k token。MI300X 是 OAM 模块，通常以 8 卡服务器整机形式销售，而非单张 PCIe 卡；项目的“先前工作”部分还引用了 2xMI300X 的相关实现。
 
-hackernews · bryanmikaelian · 8月3日 14:15 · [社区讨论](https://news.ycombinator.com/item?id=49156111)
+hackernews · zhoutong · 8月4日 10:00 · [社区讨论](https://news.ycombinator.com/item?id=49166386)
 
-**背景**: 文章认为，传统配置系统是因为用户无法轻松修改闭源工具行为而存在的折中方案。既然 LLM 能够阅读并修改源代码，让开发者工具开源就能让用户直接编辑程序，从而去掉配置层。这一想法延续了开源运动的理想，但在维护成本与效率方面面临现实疑问。
+**背景**: DeepSeek V4 Flash 是 DeepSeek V4 系列的预览版，属于混合专家（MoE）模型，总参数 284B，激活参数 13B，设计用于在 1M token 的上下文窗口内高效推理。AMD MI300X 是数据中心 GPU，配备 192GB HBM3 显存，与 Nvidia 的数据中心加速器竞争；在单块这类 GPU 上运行大型 MoE 模型，需要仔细管理内存和上下文。Ollama 和 Hugging Face 等工具现已收录 DeepSeek V4 Flash，这有助于它在本地进行实验。
 
-**社区讨论**: 评论者大体认同开发者工具应当开源，但对文中的激进结论持保留态度。simonw 指出 LLM 让开源初衷变得更为可行，而 kelnos 和 theamk 认为用 AI 重建替换配置既低效又不可靠；作为开发者工具维护者的 lalitmaganti 则警告称这一想法过于理想化，因为工程师只希望工具能正常运作。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
+<li><a href="https://ollama.com/library/deepseek-v4-flash">deepseek - v 4 - flash</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Amd_MI300X">Amd MI300X</a></li>
 
-**标签**: `#open-source`, `#devtools`, `#LLM`, `#software-engineering`
+</ul>
+</details>
+
+**社区讨论**: 评论区总体上肯定了这一工作，但也提出了一些实际注意事项：MI300X 不能单独购买（通常装在约 25 万欧元的 8 卡整机中），并且“先前工作”部分遗漏了 DwarfStar，后者据称能用更少内存运行同一模型。还有人认为，256k 上下文的取舍相当合理，与 Codex 等模型相当，并且 DeepSeek V4 Flash 也应能塞进未来基于 PCIe、配备 144GB 的 MI350P 中。
+
+**标签**: `#DeepSeek`, `#AMD MI300X`, `#LLM inference`, `#quantization`, `#hardware`
 
 ---
 
 <a id="item-5"></a>
-## [ComfyUI 首日支持 MiniMax H3：开放权重、原生音频与 2K 视频](https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui) ⭐️ 8.0/10
+## [联邦快递邮件酷似钓鱼，侵蚀信任助长诈骗](https://www.troyhunt.com/thanks-fedex-this-is-why-we-keep-getting-phished/) ⭐️ 8.0/10
 
-ComfyUI 宣布首日支持 MiniMax H3，这是一款新的开放权重多模态视频模型，可接受文本、图像、视频和音频输入，并生成原生立体声视频，最高支持 2K 分辨率和每段 15 秒。 此次发布让创作者能够立即在 ComfyUI 中本地运行下一代开放权重视频模型，并支持原生音频生成和 2K 输出。社区反响热烈，表明它可能对 AI 媒体生成工作流产生重大影响。 根据模型卡，该模型约 40% 的参数（调制权重）可以被剪枝并替换为查找表，从而将总内存从 123.6 GB 降至 42.5 GB，且质量无损。有用户报告称，在 RTX 4070 Ti Super 上生成 10 秒 480p 视频大约需要 10 分钟。
+安全研究员 Troy Hunt 发文指出，联邦快递等正规公司会发送酷似钓鱼邮件的通知，例如带有 PDF 附件的报关通知竟来自个人发件人。这类做法让真实邮件与诈骗信息的界限变得模糊。 当可信品牌模仿诈骗邮件的模式发送邮件时，用户辨别钓鱼邮件与真实信息的能力会被削弱。这会让真正的钓鱼攻击更容易得手，也使安全培训的效果大打折扣。 评论区举出实例：联邦快递报关单由“某人”以 PDF 附件发送，谷歌存储告警使用了短域名 c.gle，美国国税局在电话语音系统中使用了商用文本转语音技术。这说明攻击者无需高级技巧，就能轻松模仿同样的外观和语气。
 
-hackernews · vblanco · 8月3日 13:34 · [社区讨论](https://news.ycombinator.com/item?id=49155629)
+hackernews · stymaar · 8月4日 21:09 · [社区讨论](https://news.ycombinator.com/item?id=49175192)
 
-**背景**: MiniMax H3 是一个开放权重的多模态视频模型系列，支持文字转视频、图像转视频以及帧间转换生成。ComfyUI 是一个流行的基于节点的 AI 图像和视频流水线构建界面。首日支持意味着 MiniMax H3 在发布当天就被原生集成到 ComfyUI 中，用户可以直接加载模型并在本地运行。
+**背景**: 网络钓鱼是一种社会工程攻击，攻击者将欺诈信息伪装成正常通信，以窃取账号密码或数据。SPF、DKIM、DMARC 等邮件认证标准可帮助收件服务器验证邮件是否真的来自其声明的域名，BIMI 则允许品牌在受支持的邮件客户端中显示经过验证的标识。然而，这些保护只有在企业始终遵守安全的发信规范时才有用；当正规发信方的行为与钓鱼者相似时，用户就无法再依赖熟悉的外观线索来判断真伪。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui">MiniMax H3 Day - 0 Support in ComfyUI : Open Weights, Native Audio...</a></li>
-<li><a href="https://huggingface.co/Comfy-Org/MiniMax-H3">Comfy-Org/ MiniMax - H 3 · Hugging Face</a></li>
-<li><a href="https://hailuoai.video/tools/minimax-h3">MiniMax H 3 Multimodal AI Video Model | Hailuo AI</a></li>
+<li><a href="https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/">What are DMARC, DKIM, and SPF?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Brand_Indicators_for_Message_Identification">Brand Indicators for Message Identification - Wikipedia</a></li>
+<li><a href="https://bimigroup.org/">Home - BIMI Group</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论大体上热情洋溢，但也提出了技术问题。一位用户质疑剪枝 40% 的权重是否真的能做到“质量无损”，以及该做法能否应用于大语言模型。其他用户分享了性能体验，称赞整体质量，但同时提到在非寻常场景下仍存在瑕疵，以及部分片段仍有“AI 平滑”效果。
+**社区讨论**: 评论者大多赞同作者，并分享了各自经历：有人收到过看起来像骗局的真实联邦快递报关单，有人质疑 Google 的短链接域名 c.gle 是否合法，还有人指出国税局电话系统以及泛滥的廉价通用顶级域名也在造成混乱。总体情绪是对正规机构不但没有让通信更易验证、反而加剧用户困惑表示沮丧。
 
-**标签**: `#ComfyUI`, `#MiniMax H3`, `#AI video generation`, `#Open weights`, `#Text-to-video`
+**标签**: `#phishing`, `#security`, `#email`, `#cybersecurity`, `#FedEx`
 
 ---
 
 <a id="item-6"></a>
-## [Andy Pavlo 加盟 ClickHouse，创立 ClickHouse Labs](https://clickhouse.com/blog/andy-pavlo-joins-clickhouse) ⭐️ 8.0/10
+## [Oxide Computer 完成 4.45 亿美元 D 轮融资](https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml) ⭐️ 8.0/10
 
-著名数据库研究者 Andy Pavlo 以数据库研究副总裁的身份加入 ClickHouse，创立并领导新的研究部门 ClickHouse Labs。这一消息于 2026 年 8 月 3 日公布。 此举将学术数据库研究与工业实践连接起来，表明 ClickHouse 对长期研究的大手笔投入。它可能影响 OLAP 数据库架构的未来走向，并激励更多学术界与产业界的合作。 ClickHouse Labs 将由 Pavlo 领导，他以数据库系统方面的研究以及在卡内基梅隆大学广受欢迎的“数据库系统”课程而闻名。该部门将专注于数据库研究，并计划将学术成果融入 ClickHouse 的开源 OLAP 引擎。
+根据最近提交的 SEC Form D 文件，Oxide Computer 已完成 4.45 亿美元的 D 轮融资。这是该公司迄今最大的一轮融资，此前在 2026 年早些时候曾完成 2 亿美元的 C 轮融资。 这轮巨额融资表明投资者对 Oxide 挑战传统云基础设施、押注云原生硬件的使命充满信心。这笔资金可能帮助公司扩大生产和销售，为企业客户提供超大规模云服务之外的新选择。 该 SEC Form D 文件属于 Regulation D 豁免发行通知，表格本身不披露估值或详细的投资人信息。评论者引述 Oxide 的融资历史为 2023 年 4400 万美元 A 轮、2025 年 1 亿美元 B 轮、2026 年 2 亿美元 C 轮，而本轮 4.45 亿美元 D 轮是一个明显跃升。
 
-hackernews · nikolay\_sivko · 8月3日 14:09 · [社区讨论](https://news.ycombinator.com/item?id=49156011)
+hackernews · depr · 8月4日 20:13 · [社区讨论](https://news.ycombinator.com/item?id=49174407)
 
-**背景**: ClickHouse 是一个开源的列式数据库管理系统，专为大规模数据集的在线分析处理（OLAP）而设计。通过建立专门的研究实验室，ClickHouse 旨在探索新的数据库技术，并在竞争激烈的 OLAP 市场中保持领先地位。
+**背景**: Oxide Computer 是一家专注于云原生硬件的初创公司，旨在重新思考企业采购和运营云基础设施的方式。Form D 是向美国 SEC 提交的 Regulation D 豁免证券发行通知，通过 SEC 的 EDGAR 电子系统申报。云原生方式通常利用容器化的微服务，使应用能够在不同环境中运行。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://clickhouse.com/blog/andy-pavlo-founding-clickhouse-labs">ClickHouse launches ClickHouse Labs with Andy Pavlo as VP of Database Research | ClickHouse</a></li>
-<li><a href="https://www.businesswire.com/news/home/20260803890510/en/ClickHouse-Launches-ClickHouse-Labs-With-Andy-Pavlo-as-VP-of-Database-Research">ClickHouse Launches ClickHouse Labs With Andy Pavlo as VP of Database Research</a></li>
-<li><a href="https://en.wikipedia.org/wiki/ClickHouse">ClickHouse - Wikipedia</a></li>
+<li><a href="https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/what-form-d">What is Form D? - SEC.gov</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Form_D">Form D - Wikipedia</a></li>
+<li><a href="https://aws.amazon.com/what-is/cloud-native/">What is Cloud Native? - Cloud Native Architecture Explained - AWS</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者对此消息表示欢迎，不少人希望 ClickHouse 能在政府资助减少的情况下为学术数据库研究提供资金。还有人猜测快速 OLAP 产品之间的融合趋势，一位评论者称赞 Pavlo 的 CMU 课程给自己带来的启发。
+**社区讨论**: 社区情绪总体正面：用户为这一消息欢呼，并称赞 Jessie Frazelle 的参与，有人说她做的项目都值得信任。不过，一位工程副总裁表示，他们去年提交了销售咨询但从未收到回复，尽管他们每年在 AWS 上花费约 90 万美元。还有人质疑 Oxide 是否真的向客户发货，因为他们没有看到实际部署案例。
 
-**标签**: `#ClickHouse`, `#database research`, `#Andy Pavlo`, `#OLAP`, `#industry news`
+**标签**: `#funding`, `#hardware`, `#cloud-computing`, `#infrastructure`, `#oxide-computer`
 
 ---
 
 <a id="item-7"></a>
-## [简街 Bonsai 让 OCaml 进入全栈 Web 开发](https://github.com/janestreet/bonsai) ⭐️ 8.0/10
+## [Xbox 宕机导致光盘游戏无法游玩，数字所有权争议再起](https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/) ⭐️ 8.0/10
 
-简街（Jane Street）的 Bonsai 是一个用 OCaml 构建响应式 Web 应用的 UI 库，因能让前后端共享类型而备受社区关注。它目前已在 GitHub 上公开可用。 Bonsai 的重要性在于它让 OCaml 开发者可以用同一种语言和类型编写全栈应用，减少样板代码并提高类型安全。它也是来自大型金融科技公司的生产级 UI 框架，可能影响 OCaml 在 Web 开发领域的采用。 Bonsai 部分灵感来自 Elm，旨在用于在 Incremental 风格的框架（如 Incr\_dom 或 React）中构建可复用 UI 组件。在简街，它已被用来构建许多内部 Web 应用，包括与交易系统交互的工具。
+一次大规模 Xbox 服务中断导致用户无法游玩自己拥有的实体光盘游戏，原因是微软的服务器端许可证验证不可用。微软已承认该问题，并表示将更改许可验证系统，确保光盘游戏在服务器中断或离线时不会被封锁。 这一事件表明，即使是实体光盘游戏也与 DRM 和在线基础设施紧密捆绑，削弱了“真正拥有”的意义。它强化了玩家应获得更强权利（访问、保存和转售所购软件）的论点。 微软承认光盘游戏需要经过许可证验证，但表示这类验证不应在服务器故障或离线状态下阻止游戏访问。该公司正在准备修复，并表示将在这次被广泛报道的中断事件后更改许可验证系统。
 
-hackernews · KolmogorovComp · 8月3日 08:29 · [社区讨论](https://news.ycombinator.com/item?id=49152842)
+hackernews · surprisetalk · 8月4日 12:01 · [社区讨论](https://news.ycombinator.com/item?id=49167448)
 
-**背景**: Bonsai 是简街（Jane Street）开发的 OCaml 库，简街是一家以广泛使用 OCaml 闻名的量化交易公司。简街的许多内部系统以前只有终端界面，而 Bonsai 使现有类型化业务逻辑更容易移植到 Web。该库支持响应式编程，帮助开发者利用 OCaml 强大的类型系统构建动态 Web 应用。
+**背景**: “始终在线”DRM 要求消费者在连接服务器后才能使用产品，通常用于验证许可证。微软一直在 Xbox 平台上大力推动数字发行，如今就连光盘版游戏也依赖在线许可证检查。这种做法长期以来备受争议，因为它引入了单点故障，并让正版玩家依赖服务器可用性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/janestreet/bonsai">GitHub - janestreet / bonsai : A library for building dynamic webapps...</a></li>
-<li><a href="https://en.mycoding.id/bonsai-janestreet-s-ui-library-57684.html">Bonsai : Janestreet &#x27;s Ui Library</a></li>
-<li><a href="https://opam.ocaml.org/packages/bonsai/">opam - bonsai</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Always-online_DRM">Always-online DRM</a></li>
+<li><a href="https://ixbt.games/en/news/2026/07/30/425735-xbox-izmenit-sistemu-licenzii-posle-skandala-s-nedostupnymi-igrami.html">Xbox to Change Licensing System After Inaccessible Games Scandal</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区态度谨慎乐观。一些开发者询问除简街之外的生产环境实际采用情况，另一些人对前后端共享类型感到兴奋。还有讨论将 Bonsai 与 Melange 比较，也有人批评其默认外观不够美观，但性能得到认可。
+**社区讨论**: 评论者表达了对现代游戏脆弱性的不满，并将其与 GameCube、PS3 等旧主机作对比——那些平台上游戏可离线运行并支持局域网联机。他们认为真正的问题在于“所有权”而非实体版与数字版之分，并呼吁赋予玩家保留、备份、转售和传承游戏的权利。还有人批评 Xbox 即使在《士官长合集》等游戏中也要强制在线登录。
 
-**标签**: `#OCaml`, `#UI`, `#Jane Street`, `#Frontend`, `#Functional Programming`
+**标签**: `#Xbox`, `#DRM`, `#digital-ownership`, `#gaming`, `#outage`
 
 ---
 
 <a id="item-8"></a>
-## [Kimi K3 架构解析：压缩内存、跨层注意力与潜在专家路由](https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the) ⭐️ 8.0/10
+## [PipeNetwork 推出 MiniMax-H3 的 MLX 移植版，让 Apple Silicon 也能生成视频](https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything) ⭐️ 8.0/10
 
-SemiAnalysis 发表了对 Kimi K3 的深度分析，重点关注其压缩内存、跨深度注意力、潜在专家路由及推理性能。文章详细阐述了这些架构组件与以往大型语言模型设计的差异。 Kimi K3 将压缩内存、跨层注意力和潜在专家路由相结合，有望显著提升长上下文处理能力和推理效率。这份来自知名来源的分析为 AI 研究者和系统工程师提供了对一款前沿生产模型的罕见技术剖析。 该架构使用了类似 Compressive Transformer 的压缩内存，将较早的激活压缩而非丢弃，从而扩展有效上下文长度。它还实现了跨模型深度的注意力（类似于注意力残差），并采用在低维潜在空间中做出专家选择决策的潜在专家路由。
+Simon Willison 展示了 PipeNetwork/minimax-h3-mlx——这是 MiniMax 全能模态模型 MiniMax-H3 的 MLX 移植版，并在他的 M5 Max MacBook Pro 上成功运行。他用一段文本提示生成了约 15 秒的视频片段，模型下载约 115 GB，生成耗时不到 45 分钟。 这使一个前沿的开放权重全能模态视频模型能够在普通 Apple 硬件上实际运行，减少对云端 GPU 集群的依赖。它也凸显了 MLX 生态系统的成长，使其成为在 Apple Silicon 上本地运行大型生成模型的一条可行路径。 该 MLX 移植版使用 MiniMax-H3 的 8-bit 量化版本，并与原模型的 FL2VA 组件搭配使用。Willison 指出，由于他没有参考 MiniMax 的视频提示词撰写指南，生成的音频听起来像杂乱语音；该指南包含控制音频输出的建议。
 
-rss · Semianalysis · 8月3日 19:42
+rss · Simon Willison · 8月4日 19:10
 
-**背景**: 压缩内存由 Compressive Transformer 提出，通过对本将被逐出的旧激活应用学习式压缩操作，扩展了模型可关注的上下文历史，从而能覆盖更长的序列。跨深度注意力（有时称为注意力残差）允许注意力头在读取当前层之外还读取前几层的表示，使信息不仅能沿 token 方向传递，还能沿网络深度方向流动。潜在专家路由（如 Mixture of Latent Experts，MoLE）将路由决策保持在低维潜在空间中，从而提升大规模混合专家模型中专家选择的效率与可扩展性。
+**背景**: MiniMax-H3 是一个通用的全能模态生成系统，可接受文本、图像、音频和视频输入，并一次性生成长达 15 秒、带有原生音频的视频片段。MLX 是苹果推出的开源数组框架，专为在 Apple silicon 上进行机器学习而设计，利用其统一内存架构。该项目将 MiniMax-H3 移植到 MLX，使模型能够在 Apple 硬件上本地运行，而无需依赖远程服务器。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/pdf/1911.05507">COMPRESSIVE TRANSFORMERS FOR LONG-RANGE SEQUENCE MODELLING Jack W. Rae∗∗† ‡</a></li>
-<li><a href="https://sebastianraschka.com/llm-architecture-gallery/attention-residuals/">Attention Residuals (AttnRes) | Sebastian Raschka, PhD</a></li>
-<li><a href="https://www.emergentmind.com/topics/mixture-of-latent-experts-mole">Mixture of Latent Experts (MoLE)</a></li>
+<li><a href="https://github.com/ml-explore/mlx">GitHub - ml-explore/mlx: MLX: An array framework for Apple ...</a></li>
+<li><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H3: An Open Model Breaking the Boundaries Between ...</a></li>
+<li><a href="https://fal.ai/minimax-h3">MiniMax H3 - Open-Weights General-Purpose Multimodal Video ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Model Architecture`, `#Inference`, `#Machine Learning`, `#Kimi K3`
+**标签**: `#MLX`, `#MiniMax-H3`, `#video generation`, `#Apple Silicon`, `#open source`
 
 ---
 
 <a id="item-9"></a>
-## [DNA 设备漏洞威胁 30 年犯罪证据安全](https://www.wsj.com/tech/cybersecurity/security-flaw-placed-30-years-of-dna-evidence-at-risk-of-hacking-1932775a) ⭐️ 8.0/10
+## [我国发布首部 L3/L4 自动驾驶强制性国标](https://wap.miit.gov.cn/jgsj/zbys/qcgy/art/2026/art_a1d2072374884287b67048a77560014e.html) ⭐️ 8.0/10
 
-研究人员发现，美国多数犯罪实验室使用的 DNA 分析设备存在严重漏洞，可让攻击者不留痕迹地篡改 DNA 扫描数据。设备制造商赛默飞世尔已在 7 月承认该漏洞，并于上周五发布安全公告和加入数字签名的软件更新。 该漏洞可能让攻击者篡改自 1995 年以来的法医 DNA 证据，进而影响刑事调查和定罪案件。这也暴露出美国 200 多家犯罪实验室网络安全防护参差不齐、缺乏统一监管的问题。 研究人员借助 Anthropic 的 Claude 生成的代码，在约 45 分钟内成功篡改 DNA 扫描文件，且修改后的文件未触发常用分析软件的警报。赛默飞世尔表示尚未发现该漏洞被实际利用，并正与美国网络安全和基础设施安全局（CISA）合作。
+2026 年 7 月 30 日，工业和信息化部发布《智能网联汽车 自动驾驶系统安全要求》（GB 44721—2026），这是我国首部针对 L3、L4 级自动驾驶系统的强制性国家标准，拟于 2027 年 7 月 1 日起正式实施。 该标准将自动驾驶安全要求从推荐性转为强制性，为所有进入中国市场的 L3/L4 车辆设定了必须达到的最低安全门槛。这将深刻影响汽车制造商、供应商以及自动驾驶技术公司的研发与上市审批流程，重塑全球最大汽车市场中的高级别自动驾驶格局。 标准适用于搭载 L3 级和/或 L4 级系统的 M 类（载客）和 N 类（载货）车辆，但不包括自动泊车系统。该标准是对 2024 年推荐性国标的系统性升级，从企业全生命周期安全保障、系统动态驾驶能力、人机交互与用户告知、多维度检验检测四个维度构建要求体系，并要求 L3 系统具备驾驶人接管能力监测功能。
 
-telegram · zaihuapd · 8月3日 05:15
+telegram · zaihuapd · 8月4日 13:06
 
-**背景**: 法医实验室使用 DNA 分析设备（如基因分析仪）从犯罪现场样本中生成 DNA 图谱，并产生由专门软件解读以供比对的數據文件。数字签名基于非对称加密技术，接收方可以验证文件在签名后是否被篡改。该漏洞影响设备处理数据文件的方式，使得在绕过实验室访问控制的情况下篡改成为可能。
+**背景**: 中国国家标准分为强制性标准（GB，不带 T）和推荐性标准（GB/T）两类，强制性标准必须依法执行，推荐性标准则属于自愿采用。L3 级（有条件自动驾驶）和 L4 级（高度自动驾驶）是 SAE 定义的高级别自动驾驶等级，系统在大多数情况下承担驾驶任务，但特定场景下仍可能需要人类驾驶人接管。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://ip.net.coffee/claude/news/20260803b.html">美犯罪实验室 DNA 设 备 曝漏洞：30...</a></li>
-<li><a href="https://aiplus.360.cn/cjwt/5305.html">数字签名：保证数据安全的关键技术 - 360亿方智能</a></li>
+<li><a href="http://www.ce.cn/xwzx/gnsz/gdxw/202608/t20260804_3128645.shtml">ce.cn/xwzx/gnsz/gdxw/202608/t20260804_3128645.shtml</a></li>
+<li><a href="https://www.autohome.com.cn/news/202608/1316205.html">autohome.com.cn/news/202608/1316205.html</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/695754743">一文看懂规范标准的强制性标准和推荐性标准 - 知乎</a></li>
 
 </ul>
 </details>
 
-**标签**: `#cybersecurity`, `#DNA analysis`, `#forensics`, `#vulnerability`, `#Thermo Fisher`
+**标签**: `#autonomous driving`, `#regulation`, `#national standard`, `#China`, `#safety`
 
 ---
 
 <a id="item-10"></a>
-## [英伟达 170HX 矿卡破解解锁 80GB 显存 价格飙升](https://finance.sina.com.cn/tech/roll/2026-08-03/doc-inikzqsf4659769.shtml) ⭐️ 8.0/10
+## [白宫开源 AI 监管急转弯，硅谷立场分裂](https://www.nytimes.com/2026/08/04/technology/ai-washington-regulation-whiplash.html) ⭐️ 8.0/10
 
-亚利桑那州立大学的研究人员公开了破解英伟达 CMP 170HX 矿卡的方法，利用 Falcon 安全协处理器的栈溢出漏洞绕过 OTP 熔丝锁定。该破解最高可将显存解锁至 80GB，FP32 算力从 0.39 TFLOPS 暴增至 94 TFLOPS，导致二手价格飙升。 这一破解意义重大，因为它将一款受限严重的矿卡变成廉价 AI 算力选择，冲击英伟达的产品分级策略，影响平价 AI 硬件市场。同时，它也暴露了英伟达 GPU 保护机制的安全弱点。 CMP 170HX 采用与 A100 相同的 GA100 核心，但出厂限制为 4480 个 CUDA 核心和 8GB HBM2e，通过 OTP 熔丝锁定。该漏洞利用 Falcon 协处理器的 DMA 无界溢出劫持权限；社区测试显示，解锁卡可在 Windows 和 Linux 下运行 AI 图像生成及大语言模型推理，但长期稳定性和不同批次的解锁上限仍不确定。
+特朗普政府一度考虑对中国开源 AI 实施制裁、贸易黑名单甚至禁止美企合作，但在硅谷强烈反对后转向要求模型发布前接受网络安全审查的新框架。白宫于 2026 年 8 月 4 日召集科技公司商议该方案，导火索是中国开源模型 Kimi 部分性能比肩 OpenAI 顶级模型。 这一政策急转弯将影响美国 AI 生态的开放程度，并重塑与中国开源模型的全球竞争格局。它也暴露了美国科技巨头之间的重大分歧：OpenAI 与 Anthropic 以国家安全为由推动限制，而英伟达、Meta 等则力挺开放生态。 新框架拟在模型公开发布前进行网络安全审查，这与早前考虑制裁、贸易黑名单的强硬方案形成鲜明对比。黄仁勋上月首次在 X 平台发帖为开源辩护，并参与组建了拥有逾 230 家成员的安全联盟。
 
-telegram · zaihuapd · 8月3日 11:29
+telegram · zaihuapd · 8月4日 15:22
 
-**背景**: CMP 170HX 是英伟达 2021 年发布的加密货币矿卡，基于阉割版 GA100 GPU，配备巨大散热片、无主动散热，原价约 5000 美元。英伟达通过 OTP 熔丝永久锁定计算、显存等硬件功能，GPU 内嵌的 Falcon 协处理器则用于防止错误编程。这些限制此前被认为不可逆转，因此此次破解格外引人注目。
+**背景**: Kimi 是月之暗面（Moonshot AI）开发的一系列大语言模型；该公司由杨植麟等清华校友于 2023 年 3 月创立，是中国“AI 六小龙”之一。其最新模型（如 Kimi K3）据报道在部分基准测试中可与美国顶尖模型匹敌，加剧了美国围绕开源 AI 的政策争论。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.techpowerup.com/289310/nvidia-cmp-170hx-mining-card-tested-based-on-ga100-gpu-sku">NVIDIA CMP 170HX Mining Card Tested, Based on GA100 GPU SKU | TechPowerUp</a></li>
-<li><a href="https://videocardz.com/newz/nvidia-cmp-170hx-mining-card-with-ga100-gpu-has-a-massive-heatspreader">NVIDIA CMP 170HX mining card with GA100 GPU has a massive heatspreader - VideoCardz.com</a></li>
-<li><a href="https://download.nvidia.com/open-gpu-doc/Falcon-Security/1/Falcon-Security.html">NVIDIA Falcon Security</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kimi_%28chatbot%29">Kimi (chatbot) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Moonshot_AI">Moonshot AI - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Yang_Zhilin">Yang Zhilin - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区情绪总体热烈，用户在实际系统上验证了解锁效果，并指出 AI 负载性价比大幅提升。也有人担忧长期可靠性、英伟达可能的反制措施，以及不同批次解锁成功率的差异。新闻中未包含官方评论。
-
-**标签**: `#hardware`, `#security`, `#Nvidia`, `#AI computing`, `#exploit`
-
----
-
-<a id="item-11"></a>
-## [苹果就 iCloud 后门要求起诉英国政府](https://www.ft.com/content/2cc9c96a-0e5b-4c33-a95a-3d11072a145c?syn-25a6b1a6=1) ⭐️ 8.0/10
-
-苹果已向英国调查权力法庭提起法律申诉，挑战政府的技术能力通知（TCN），该通知要求苹果开放英国用户加密 iCloud 云备份的访问权限。 此案检验了英国政府强制科技公司削弱加密的权力，对全球隐私、安全以及端到端加密的未来具有重大影响。裁决可能为民主国家政府如何在执法需求与用户隐私之间取得平衡开创先例。 苹果于 2025 年 2 月在英国下架了 iCloud 高级数据保护（端到端加密）功能，此前影响英美用户的旧要求被撤回，取而代之的是仅针对英国用户的新通知。Privacy International 和 Liberty 也对 TCN 提出了申诉，法庭已定于下月举行案件管理听证。
-
-telegram · zaihuapd · 8月3日 15:40
-
-**背景**: 技术能力通知（TCN）是英国《2016 年调查权力法》下的法律工具，允许内政大臣对运营商施加义务，协助拦截通信。调查权力法庭是英国审理公共机构监控投诉的法院。苹果的高级数据保护是 iCloud 的可选功能，采用端到端加密，因此连苹果本身也不掌握解密的密钥。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Technical_capability_notice">Technical capability notice</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Investigatory_Powers_Tribunal">Investigatory Powers Tribunal</a></li>
-<li><a href="https://support.apple.com/en-us/108756">How to turn on Advanced Data Protection for iCloud - Apple Support</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Apple`, `#encryption`, `#privacy`, `#UK law`, `#iCloud`
+**标签**: `#AI政策`, `#开源AI`, `#中美竞争`, `#监管`, `#人工智能`
 
 ---
 
